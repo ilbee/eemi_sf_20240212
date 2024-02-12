@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New brand{% endblock %}
+
+{% block body %}
+    <h1>New brand</h1>
+    {{ form_start(varForm) }}
+        <button type="submit">Save</button>
+    {{ form_end(varForm) }}
+{% endblock %}
