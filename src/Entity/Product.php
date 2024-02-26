@@ -17,6 +17,7 @@ class Product
     private ?string $reference = null;
 
     #[ORM\Column(length: 13, nullable: true)]
+    #[Assert\Regex(pattern: '/[0-9]{13}$/', message: 'The EAN must be a 13-digit number')]
     private ?string $ean = null;
 
     #[ORM\Column]
